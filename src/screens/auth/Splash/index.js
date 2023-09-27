@@ -1,6 +1,6 @@
 import React from "react";
 import {Text, View, Image} from "react-native"
-import Button from "../../../components/";
+import Button from "../../../components/Button";
 import {styles} from "./styles";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
 
