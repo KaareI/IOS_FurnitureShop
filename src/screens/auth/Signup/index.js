@@ -13,7 +13,7 @@ const Signup = () => {
     
     return(
         <View style={styles.container}>
-            <AuthHeader title={"Sign up"}/>
+            <AuthHeader title={"Sign Up"}/>
             <Input label="Name" placeholder="John Doe"/>
             <Input label="Email" placeholder="example@gmail.com"/>
             <Input isPassword label="Password" placeholder="******"/>
@@ -24,6 +24,7 @@ const Signup = () => {
             <Button style={styles.button} title ="Sign In"/>
             <Separator text="Or sign up with"/>
             <GoogleLogin />
+            <Text style={styles.footerText}>Already have an account?<Text style={styles.footerLink}> Sign In</Text></Text>
         </View>
     )
 }

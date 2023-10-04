@@ -1,6 +1,7 @@
 import { StyleSheet } from "react-native";
 
 import {colors} from '../../../utils/colors'
+import { Colors } from "react-native/Libraries/NewAppScreen";
 
 export const styles = StyleSheet.create({
 container: {
@@ -19,6 +20,14 @@ agreeTextBold:{
 },
 button: {
     marginVertical: 20
+},
+footerText:{
+    color: colors.blue,
+    marginBottom: 56,
+    textAlign: 'center'
+},
+footerLink: {
+    fontWeight: "bold"
 }
 }
 )
