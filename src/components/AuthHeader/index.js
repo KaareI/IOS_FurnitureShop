@@ -13,4 +13,4 @@ const AuthHeader = ({title, onBackpress}) => {
     )
 }
 
-export default AuthHeader;
+export default React.memo(AuthHeader);

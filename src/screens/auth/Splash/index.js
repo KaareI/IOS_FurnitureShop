@@ -3,9 +3,21 @@ import {Text, View, Image} from "react-native"
 import Button from "../../../components/Button";
 import {styles} from "./styles";
 import Pressable from "react-native/Libraries/Components/Pressable/Pressable";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const Splash = ()  => {
+const Splash = ({navigation})  => {
+    console.log('navigation => ', navigation)
+
+    const onSignup = () => {
+        navigation.navigate('Signup')
+    }
+
+    const onSignin = () => {
+        navigation.navigate('Signin')
+    }
+
     return (
+        <SafeAreaView>
         <View style={styles.container}>
         <Image resizeMode="contain" style={styles.image} source={require('../../../assets/splash_image.png')}/>
 
@@ -15,11 +27,12 @@ const Splash = ()  => {
         <Text style={styles.title}>Here!</Text>
         </View>
 
-        <Button title="Sign up" />
-        <Pressable hitSlop={20}>
+        <Button onPress={onSignup} title="Sign up" />
+        <Pressable onPress={onSignin} hitSlop={20}>
             <Text style ={styles.footerText}>Sign In</Text>
         </Pressable>
         </View>
+        </SafeAreaView>
     )
 }
 export default Splash;
