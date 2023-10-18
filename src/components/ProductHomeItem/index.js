@@ -1,13 +1,13 @@
 import React from "react";
-import { Pressable, Image, Text, View } from "react-native";
-import { styles} from "./styles";
+import { Pressable, Image, Text } from "react-native";
+import { styles } from "./styles";
 
-const ProductHomeItem = ({title, image, price, onPress}) => {
-    return(
-        <Pressable onPress = {onPress} style={styles.container}>
-<Image style={styles.image} source={{uri:image}}/>
-<Text style={styles.title}>{title}</Text>
-<Text style={styles.title}>{price}</Text>
+const ProductHomeItem = ({ title, image, price, onPress }) => {
+    return (
+        <Pressable onPress={onPress} style={styles.container}>
+            <Image style={styles.image} source={{ uri: image }} />
+            <Text style={styles.title}>{title}</Text>
+            <Text style={styles.title}>{price}</Text>
 
         </Pressable>
     )
