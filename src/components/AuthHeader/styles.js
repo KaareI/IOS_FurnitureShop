@@ -1,6 +1,5 @@
 import { StyleSheet } from "react-native";
-
-import {colors} from "../../utils/colors"
+import { colors } from "../../utils/colors";
 
 export const styles = StyleSheet.create({
     container: {
@@ -10,12 +9,12 @@ export const styles = StyleSheet.create({
     },
     image: {
         width: 18,
-        height: 18
+        height: 18,
     },
     title: {
         color: colors.blue,
         fontSize: 26,
-        fontWeight: "500",
+        fontWeight: '500',
         paddingHorizontal: 16
     }
 })

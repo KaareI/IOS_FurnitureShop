@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import {colors} from '../../utils/colors'
+import { colors } from "../../utils/colors";
 
 export const styles = StyleSheet.create({
     container: {
@@ -12,8 +12,8 @@ export const styles = StyleSheet.create({
         color: colors.blue,
         fontWeight: '500'
     },
-    line:{
-        backgroundColor: colors.lightGrey,
+    line: {
+        backgroundColor: colors.lightGray,
         height: 1,
         flex: 1,
         marginVertical: 8

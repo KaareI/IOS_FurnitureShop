@@ -1,8 +1,8 @@
 import { StyleSheet } from "react-native";
 
-import {colors} from "../../utils/colors"
+import { colors } from "../../utils/colors";
 
-export const styles = StyleSheet.create({
+export const styles = StyleSheet.create( {
     container: {
         flexDirection: "row",
         alignItems: "center",
@@ -15,6 +15,10 @@ export const styles = StyleSheet.create({
     },
     icon: {
         width: 24,
-        height: 24
+        height: 24,
+    },
+    space: {
+        width: 24
     }
+
 })

@@ -1,25 +1,27 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from "react-native"
+import { colors } from "../../utils/colors";
 
-import {colors} from "../../utils/colors"
-
-export const styles = StyleSheet.create({
+export const styles = StyleSheet.create( {
     container: {
         marginHorizontal: 8,
         flexDirection: "column",
         justifyContent: "center",
-        alignItems: "center"
+        alignItems: "center",
     },
-    title:{
-        color: colors.grey
+
+    title: {
+        color: colors.grey,
     },
-    image:{
+
+    image: {
         width: 32,
         height: 32
     },
-    imageContainer:{
-        backgroundColor: colors.lightGrey,
+
+    imageContainer: {
+        backgroundColor: colors.lightGray,
         padding: 8,
         borderRadius: 8,
         marginBottom: 8
     }
-})
+} );
